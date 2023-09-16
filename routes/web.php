@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => ''], function () {
 
 
-    Route::get('/', [HomeAdminController::class,'index'])->name('index');
+    Route::get('/', [HomeAdminController::class,'welcome'])->name('welcome');
     Route::get('home', [HomeAdminController::class,'index'])->name('home');
 //    Route::get('/', [HomeController::class,'index'])->name('index');
 //    Route::get('home', [HomeController::class,'index'])->name('home');

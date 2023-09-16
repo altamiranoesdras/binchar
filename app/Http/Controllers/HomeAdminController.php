@@ -14,7 +14,7 @@ class HomeAdminController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except('welcome');
         //$this->middleware('verified');
     }
 
@@ -23,11 +23,11 @@ class HomeAdminController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function welcome()
     {
 
 
-        return view('home');
+        return view('welcome');
     }
 
     public function dashboard()
