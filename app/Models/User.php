@@ -42,4 +42,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function getImgAttribute()
+    {
+        return asset('dist/img/avatar5.png');
+    }
+
+    public function getThumbAttribute()
+    {
+        return asset('dist/img/avatar5.png');
+    }
 }
