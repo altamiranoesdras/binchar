@@ -25,10 +25,9 @@ class HomeAdminController extends Controller
      */
     public function index()
     {
-        $user = User::with(['shortcuts','options'])->find(auth()->user()->id);
 
 
-        return view('home',compact('user'));
+        return view('home');
     }
 
     public function dashboard()
